@@ -1,9 +1,9 @@
-﻿using Asset.Inventory.Models;
-using Asset.Inventory.Repositories.Interface;
+﻿using AssetsManagement.Inventory.Models;
+using AssetsManagement.Inventory.Repositories.Interface;
 using System;
 using System.Threading.Tasks;
 
-namespace Asset.Inventory
+namespace AssetsManagement.Inventory
 {
     public sealed class InventoryManager
     {

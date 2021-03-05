@@ -1,16 +1,13 @@
-﻿using Moq;
-using Asset.Inventory.DTOs;
-using Asset.Inventory.Models;
-using Asset.Inventory.Repositories.Interface;
-using System;
+﻿using AssetsManagement.Inventory.Models;
+using AssetsManagement.Inventory.Repositories.Interface;
+using Moq;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Asset.Inventory.Tests
+namespace AssetsManagement.Inventory.Tests
 {
     public class AssetTypesManagerShould
     {

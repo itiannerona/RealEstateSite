@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asset.Inventory.Models
+namespace AssetsManagement.Inventory.Models
 {
     public record Feature
     {

@@ -1,11 +1,11 @@
-﻿using RealEstate.Inventory.Models;
+﻿using AssetsManagement.Inventory.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RealEstate.Inventory.Repositories.Interface
+namespace AssetsManagement.Inventory.Repositories.Interface
 {
     public interface IAssetTypesRepository
     {

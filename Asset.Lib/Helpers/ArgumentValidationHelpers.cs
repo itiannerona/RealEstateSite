@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Asset.Inventory.Helpers
+namespace AssetsManagement.Inventory.Helpers
 {
     internal class ArgumentValidationHelpers
     {

@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Asset.Lib\Assets.Inventory.csproj" />
+    <ProjectReference Include="..\Asset.Lib\AssetsManagement.Inventory.csproj" />
   </ItemGroup>
 
 </Project>

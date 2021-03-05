@@ -1,8 +1,8 @@
-﻿using Asset.Inventory.Models;
+﻿using AssetsManagement.Inventory.Models;
 using System;
 using Xunit;
 
-namespace Asset.Inventory.Tests
+namespace AssetsManagement.Inventory.Tests
 {
     public class AddressShould
     {

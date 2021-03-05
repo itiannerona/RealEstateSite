@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assets.Inventory.Tests", "Asset.Lib.Tests\Assets.Inventory.Tests.csproj", "{63B2EF27-892D-474B-9B85-46642D8DDD48}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assets.Inventory", "Asset.Lib\Assets.Inventory.csproj", "{DC1A112C-5222-47AC-BF28-023364F6F55F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssetsManagement.Inventory", "Asset.Lib\AssetsManagement.Inventory.csproj", "{DC1A112C-5222-47AC-BF28-023364F6F55F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

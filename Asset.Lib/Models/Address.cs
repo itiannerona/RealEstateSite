@@ -1,6 +1,6 @@
-﻿using Asset.Inventory.Helpers;
+﻿using AssetsManagement.Inventory.Helpers;
 
-namespace Asset.Inventory.Models
+namespace AssetsManagement.Inventory.Models
 {
     public record Address
     {

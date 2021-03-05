@@ -1,12 +1,12 @@
-﻿using RealEstate.Inventory.Models;
-using RealEstate.Inventory.Repositories.Interface;
+﻿using AssetsManagement.Inventory.Models;
+using AssetsManagement.Inventory.Repositories.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RealEstate.Inventory
+namespace AssetsManagement.Inventory
 {
     public sealed class AssetTypesManager
     {
