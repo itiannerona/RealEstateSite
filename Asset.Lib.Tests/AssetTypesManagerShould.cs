@@ -19,9 +19,9 @@ namespace AssetsManagement.Inventory.Tests
             _properyTypesRepository = new();
         }
 
-        [Theory]
+        [Theory(Skip = "Needs more information")]
         [InlineData("test")]
-        public async Task NotAcceptExistingPropertyType(string typeName)
+        public async Task Not_Accept_Existing_PropertyType(string typeName)
         {
             _properyTypesRepository.Setup(r => r.DoesTypeExist(It.IsAny<string>())).ReturnsAsync(true);
             _sut = new(_properyTypesRepository.Object);
@@ -32,7 +32,7 @@ namespace AssetsManagement.Inventory.Tests
         }
 
         [Theory, ClassData(typeof(CreateDistinctListOfAttributes_Fakes))]
-        public async Task CreateDistinctListOfAttributes(IEnumerable<string> expected, string newFakeType, IEnumerable<string> newFakeFeatures)
+        public async Task Create_Distinct_From_List_Of_Attributes(IEnumerable<string> expected, string newFakeType, IEnumerable<string> newFakeFeatures)
         {
             _properyTypesRepository.Setup(r => r.AddAssetTypeAsync(It.IsAny<string>(), It.IsAny<IEnumerable<string>>()))
                 .Callback<string, IEnumerable<string>>((fakeAssetTypeName, fakeFeatures) => 
@@ -56,6 +56,7 @@ namespace AssetsManagement.Inventory.Tests
         }
 
         private Dictionary<string, IEnumerable<string>> MockAssetTypesDB = new();
+
         private async Task<AssetType> GetFakeAssetType(string fakeAssetTypeName)
         {
             var fakeData = MockAssetTypesDB.First(m => m.Key == fakeAssetTypeName);
