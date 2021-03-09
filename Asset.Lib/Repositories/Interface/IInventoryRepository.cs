@@ -9,6 +9,6 @@ namespace AssetsManagement.Inventory.Repositories.Interface
 {
     public interface IInventoryRepository
     {
-        void AddPropertyAsync(Asset property);
+        Task<Guid> AddAssetAsync(Asset property);
     }
 }

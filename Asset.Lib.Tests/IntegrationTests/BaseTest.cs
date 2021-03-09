@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit.Abstractions;
 
-namespace AssetsManagement.Inventory.Tests
+namespace AssetsManagement.Inventory.IntegrationTests
 {
     public abstract class BaseTest
     {

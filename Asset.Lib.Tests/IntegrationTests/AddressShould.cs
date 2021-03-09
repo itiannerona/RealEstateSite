@@ -2,7 +2,7 @@
 using System;
 using Xunit;
 
-namespace AssetsManagement.Inventory.Tests
+namespace AssetsManagement.Inventory.IntegrationTests
 {
     public class AddressShould
     {
@@ -10,9 +10,9 @@ namespace AssetsManagement.Inventory.Tests
         [InlineData("", "", "", "")]
         public void NotAllowBlankAddress(string street, string city, string state, string postalCode)
         {
-            Assert.Throws<ArgumentException>(CreateProperty);
+            Assert.Throws<ArgumentException>(CreateAsset);
 
-            Asset CreateProperty() => new Asset
+            Asset CreateAsset() => new Asset
             {
                 Address = new Address
                 {

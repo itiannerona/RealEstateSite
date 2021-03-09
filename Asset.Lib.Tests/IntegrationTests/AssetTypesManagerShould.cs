@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace AssetsManagement.Inventory.Tests
+namespace AssetsManagement.Inventory.IntegrationTests
 {
     public class AssetTypesManagerShould
     {
