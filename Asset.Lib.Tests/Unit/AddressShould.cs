@@ -2,7 +2,7 @@
 using System;
 using Xunit;
 
-namespace AssetsManagement.Inventory.IntegrationTests
+namespace AssetsManagement.Inventory.Unit
 {
     public class AddressShould
     {
