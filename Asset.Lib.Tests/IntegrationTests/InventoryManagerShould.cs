@@ -82,7 +82,7 @@ namespace AssetsManagement.Inventory.IntegrationTests
                     byte[] fakeBytes = Encoding.UTF8.GetBytes(fakefile.Item2);
                     formFiles.Add(new
                         (
-                            baseStream: new MemoryStream(fakeBytes),
+                            baseStream: new MemoryStream(fakeBytes), // no need to dispose; memory streams do not hold resources to dispose
                             baseStreamOffset: 0,
                             length: fakeBytes.Length,
                             name: "data",
