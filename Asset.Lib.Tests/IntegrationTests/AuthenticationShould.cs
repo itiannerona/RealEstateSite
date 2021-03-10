@@ -1,9 +1,12 @@
 ﻿using AssetsManagement.RESTApi;
+using AssetsManagement.RESTApi.Models;
 using Microsoft.AspNetCore.Mvc.Testing;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
+using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
@@ -20,7 +23,7 @@ namespace Assets.Inventory.Tests.IntegrationTests
         }
 
         [Theory, InlineData("/api/journal")]
-        public async Task HttpRequestsAreRedirectedToHttps(string url)
+        public async Task Redirect_Http_Requests_To_Https(string url)
         {
             //Arrange
             var options = new WebApplicationFactoryClientOptions
@@ -38,8 +41,8 @@ namespace Assets.Inventory.Tests.IntegrationTests
             Assert.StartsWith("https://localhost/", response.Headers.Location.OriginalString);
         }
 
-        [Theory, InlineData("/api/journal")]
-        public async Task BusinessResourcesRequireAuthentication(string resourceUrl)
+        [Theory, InlineData("/api/assets")]
+        public async Task Require_Authentication(string resourceUrl)
         {
             using var httpClient = _webApiFactory.CreateClient();
 

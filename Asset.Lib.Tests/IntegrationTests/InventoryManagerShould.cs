@@ -11,9 +11,9 @@ using System.Linq;
 using AssetsManagement.Inventory.IntegrationTests;
 using System.Collections.Immutable;
 using Microsoft.Extensions.Configuration;
-using Microsoft.AspNetCore.Http.Internal;
 using System.Text;
 using System.IO;
+using Microsoft.AspNetCore.Http;
 
 namespace AssetsManagement.Inventory.IntegrationTests
 {
