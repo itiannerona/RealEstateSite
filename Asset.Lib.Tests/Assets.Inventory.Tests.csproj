@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
     <PackageReference Include="Moq" Version="4.16.1" />
     <PackageReference Include="System.Linq" Version="4.3.0" />
@@ -24,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Asset.Lib\AssetsManagement.Inventory.csproj" />
+    <ProjectReference Include="..\AssetsManagement.RESTApi\AssetsManagement.RESTApi.csproj" />
   </ItemGroup>
 
 </Project>
