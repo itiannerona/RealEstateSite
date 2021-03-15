@@ -22,7 +22,7 @@ namespace Assets.Inventory.Tests.IntegrationTests
             _webApiFactory = webApiFactory;
         }
 
-        [Theory, InlineData("/api/journal")]
+        [Theory, InlineData("/api/assets")]
         public async Task Redirect_Http_Requests_To_Https(string url)
         {
             //Arrange
@@ -61,7 +61,7 @@ namespace Assets.Inventory.Tests.IntegrationTests
                 Email = "admin@domain.net",
                 Password = "173467321476_Charlie_32789777643_Tango_732_Victor_73117888732476789764376"
             };
-            var userRegisterCredentials = new RegisterModel
+            var userRegisterCredentials = new AssetsManagement.Identity.Models.RegisterModel
             {
                 Username = "fakeUser",
                 Email = "fakeUser@domain.net",
